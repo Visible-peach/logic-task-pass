@@ -1,1 +1,37 @@
+Q1/ The first method is we can remove a character using translate() method:
 
+s = 'abc12321cba'
+print(s.translate({ord('a'): None}))
+
+another way is using replace() method:
+s = 'ab12abc34ba'
+print(s.replace('ab', ''))
+
+
+Q2/ 
+
+lower_value = int(input ("Please, Enter the Lowest Range Value: "))  
+upper_value = int(input ("Please, Enter the Upper Range Value: "))  
+  
+print ("The Prime Numbers in the range are: ")  
+for number in range (lower_value, upper_value + 1):  
+    if number > 1:  
+        for i in range (2, number):  
+            if (number % i) == 0:  
+                break  
+        else:  
+            print (number)  
+
+
+
+
+Q3/
+
+test_str='machinelearning'
+
+counter = test_str.count('a')
+
+print ("Count of a in machinelearning is : "
+                           +  str(counter))
+                           
+                           
